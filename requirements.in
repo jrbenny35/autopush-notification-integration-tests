@@ -1,0 +1,8 @@
+imgcompare
+pyscreenshot
+pytest
+pytest-selenium
+pytest-repeat
+python-xlib
+pyvirtualdisplay
+pillow
