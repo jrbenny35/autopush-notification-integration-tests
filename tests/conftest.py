@@ -25,5 +25,4 @@ def selenium(selenium):
 def firefox_options(firefox_options, autopush_env):
     firefox_options.set_preference("dom.push.serverURL", autopush_env)
     firefox_options.add_argument('-foreground')
-    # firefox_options.add_argument('-headless')
     return firefox_options
