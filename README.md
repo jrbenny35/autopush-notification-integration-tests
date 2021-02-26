@@ -2,15 +2,15 @@
 
 ## About
 
-Notification in Firefox are a crucial part of its functionality. Firefox uses [autopush] for this. This repo contains a set of tests to check the functionaility of thhese notifications.
+Notification in Firefox are a crucial part of its functionality. Firefox uses [autopush](https://github.com/mozilla-services/autopush) for this. This repo contains a set of tests to check the functionaility of thhese notifications.
 
 ## Technology
 
-The tests use [Selenium], [pytest], [docker] as well as Firefox.
+The tests use [Selenium](https://www.selenium.dev/), [pytest](https://docs.pytest.org/en/stable/index.html), [docker](https://www.docker.com/) as well as Firefox.
 
 ## Getting Started
 
-Make sure you have installed [docker-compose] as well as Docker.
+Make sure you have installed [docker-compose](https://docs.docker.com/compose/) as well as Docker.
 
 ```sh
 docker-compose up --build -d
