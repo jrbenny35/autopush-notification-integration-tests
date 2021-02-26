@@ -1,0 +1,25 @@
+version: "3"
+services:
+  server:
+    image: "firefoxtesteng/autopush-e2e-test"
+    expose:
+      - "8201"
+  tests:
+    environment: 
+      SELENIUM_HOST: firefox
+      SERVER_URL: server
+    build: .
+    depends_on: 
+      - firefox
+      - server
+  firefox:
+    environment:
+      SERVER_URL: server
+    image: "b4handjr/selenium-firefox:python3-latest"
+    volumes:
+      - ./:/code
+    expose:
+      - "4444"
+    ports:
+      - "5900:5900"
+    network_mode: host
