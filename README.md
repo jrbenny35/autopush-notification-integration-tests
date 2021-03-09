@@ -14,7 +14,6 @@ Make sure you have installed [docker-compose](https://docs.docker.com/compose/) 
 
 ```sh
 docker-compose up --build -d
-docker-compose exec --user root firefox mkdir images/
 docker-compose exec firefox pip3 install --user -r requirements.txt
 docker-compose exec firefox python3 -m pytest --driver Firefox --env dev
 ```

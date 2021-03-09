@@ -4,6 +4,7 @@ services:
     image: "firefoxtesteng/autopush-e2e-test"
     expose:
       - "8201"
+    network_mode: host
   tests:
     environment: 
       SELENIUM_HOST: firefox
