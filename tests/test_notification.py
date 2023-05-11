@@ -33,7 +33,7 @@ def test_basic_notification(base_url, selenium, setup_page, images_dir):
     # click allow notification
     with selenium.context(selenium.CONTEXT_CHROME):
         button = selenium.find_element_by_css_selector(
-            "button.popup-notification-button:nth-child(4)"
+            "button.popup-notification-primary-button"
         )
         button.click()
     img = ImageGrab.grab()
@@ -57,7 +57,7 @@ def test_basic_notification_with_altered_title(base_url, selenium, setup_page, i
     # click allow notification
     with selenium.context(selenium.CONTEXT_CHROME):
         button = selenium.find_element_by_css_selector(
-            "button.popup-notification-button:nth-child(4)"
+            "button.popup-notification-primary-button"
         )
         button.click()
     selenium.find_element_by_css_selector(".container").click()
@@ -80,7 +80,7 @@ def test_basic_notification_with_altered_body(base_url, selenium, setup_page, im
     # click allow notification
     with selenium.context(selenium.CONTEXT_CHROME):
         button = selenium.find_element_by_css_selector(
-            "button.popup-notification-button:nth-child(4)"
+            "button.popup-notification-primary-button"
         )
         button.click()
     base_img.save(f"{images_dir}/base_screenshot_with_altered_body.jpg")
@@ -99,7 +99,7 @@ def test_basic_notification_close(base_url, selenium, setup_page, images_dir):
     # click allow notification
     with selenium.context(selenium.CONTEXT_CHROME):
         button = selenium.find_element_by_css_selector(
-            "button.popup-notification-button:nth-child(4)"
+            "button.popup-notification-primary-button"
         )
         button.click()
     img = ImageGrab.grab()
